@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 250px;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Application Form</h2>
+    <form action="signup" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch" required>
+            <option value="">Select Branch</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+        </select>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="password">confirm:</label>
+        <input type="password" id="confirm" name="confirm" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
